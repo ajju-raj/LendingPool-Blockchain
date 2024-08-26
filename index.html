@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lending Pool Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lending Pool DApp</h1>
+
+        <!-- Connect Wallet Button -->
+        <button id="connectWallet">Connect Wallet</button>
+
+        <!-- Form to add a pool -->
+        <div>
+            <h2>Add Pool</h2>
+            <input type="text" id="tokenAddress" placeholder="Token Address">
+            <input type="number" id="interestRate" placeholder="Interest Rate">
+            <button id="addPoolButton">Add Pool</button>
+        </div>
+
+        <!-- Form to deposit tokens -->
+        <div>
+            <h2>Deposit Tokens</h2>
+            <input type="number" id="poolIdDeposit" placeholder="Pool ID">
+            <input type="number" id="depositAmount" placeholder="Amount">
+            <button id="depositButton">Deposit</button>
+        </div>
+
+        <!-- Form to withdraw tokens -->
+        <div>
+            <h2>Withdraw Tokens</h2>
+            <input type="number" id="poolIdWithdraw" placeholder="Pool ID">
+            <input type="number" id="withdrawAmount" placeholder="Amount">
+            <button id="withdrawButton">Withdraw</button>
+        </div>
+
+        <!-- Form to borrow tokens -->
+        <div>
+            <h2>Borrow Tokens</h2>
+            <input type="number" id="poolIdBorrow" placeholder="Pool ID">
+            <input type="number" id="borrowAmount" placeholder="Amount">
+            <button id="borrowButton">Borrow</button>
+        </div>
+
+        <!-- Form to repay tokens -->
+        <div>
+            <h2>Repay Tokens</h2>
+            <input type="number" id="poolIdRepay" placeholder="Pool ID">
+            <input type="number" id="repayAmount" placeholder="Amount">
+            <button id="repayButton">Repay</button>
+        </div>
+
+        <!-- List of pools -->
+        <div>
+            <h2>Available Pools</h2>
+            <button id="listPoolsButton">List Pools</button>
+            <div id="poolList"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.5.4/dist/ethers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
+
