@@ -1,4 +1,4 @@
-const contractAddress = "0xa996E6973B54A8F79D3bfBabc2b19a2f2A203602";  // Replace with your deployed contract address
+const contractAddress = "Your-contact-address-deployed";  // Replace with your deployed contract address
 const contractABI = [[
 	{
 		"inputs": [
